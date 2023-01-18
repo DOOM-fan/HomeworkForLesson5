@@ -1,0 +1,9 @@
+line = str(input())
+line = line.split(' ')
+for element in line:
+    if 'абв' in element:
+        line.remove(element)
+result = ''
+for element in line:
+    result += element + ' '
+print(result)
