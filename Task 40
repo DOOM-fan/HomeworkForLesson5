@@ -1,0 +1,13 @@
+string = str(input())
+current = string[0]
+counter = 0
+result = ''
+for symbol in string:
+    if symbol == current:
+        counter += 1
+    else:
+        result += str(counter) + current
+        current = symbol
+        counter = 1
+result += str(counter) + current
+print(result)
